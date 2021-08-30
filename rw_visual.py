@@ -10,7 +10,8 @@ while True:
 
     # 将所有的点都绘制出来。
     plt.style.use('classic')
-    fig, ax = plt.subplots()
+    # 指定屏幕尺寸，figsize 指定生成的图形的尺寸，单位为英寸
+    fig, ax = plt.subplots(figsize=(15, 9))
     point_numbers = range(rw.num_points)
     ax.scatter(rw.x_values,  rw.y_values, c=point_numbers, cmap=plt.cm.Blues, edgecolors='none', s=1)
 
